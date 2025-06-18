@@ -1,0 +1,89 @@
+{
+    "python.testing.unittestEnabled": true,
+    "python.testing.pytestEnabled": false,
+    "python.testing.promptToConfigure": false,
+    "python.analysis.inlayHints.pytestParameters": false,
+    "python.analysis.enablePytestSupport": false,
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnType": true,
+    "editor.rulers": [88],
+    "black-formatter.args": [
+        "--target-version",
+        "py310",
+        "--line-length",
+        "88"
+    ],
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        "canonical/landscape/api",
+        "-p",
+        "test_*.py",
+        "-t",
+        "./canonical"
+    ],
+    "python.testing.autoTestDiscoverOnSaveEnabled": false,
+    "terminal.integrated.accessibleViewPreserveCursorPosition": false,
+    "terminal.integrated.gpuAcceleration": "on",
+    "terminal.integrated.hideOnLastClosed": true,
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "Postgres",
+            "database": "postgres",
+            "username": "ubuntu",
+            "password": "landscape"
+        },
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "landscape-standalone-main",
+            "group": "Landscape Standalone",
+            "database": "landscape-standalone-main",
+            "username": "landscape",
+            "password": "landscape"
+        },
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "landscape-test-main",
+            "database": "landscape-test-main",
+            "username": "landscape",
+            "password": "landscape",
+            "group": "Landscape SaaS"
+        },
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "landscape-test-account-1",
+            "group": "Landscape SaaS",
+            "database": "landscape-test-account-1",
+            "username": "landscape",
+            "password": "landscape"
+        },
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "landscape-resource-1",
+            "group": "Landscape SaaS",
+            "database": "landscape-test-resource-1",
+            "username": "landscape",
+            "password": "landscape"
+        }
+    ],
+    "[sql]": {
+        "editor.defaultFormatter": "mtxr.sqltools"
+    }
+}

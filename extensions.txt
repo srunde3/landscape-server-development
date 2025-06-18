@@ -1,0 +1,12 @@
+ckolkman.vscode-postgres@1.4.3
+codium.codium@0.12.5
+eamodio.gitlens@16.0.5
+github.vscode-github-actions@0.27.0
+golang.go@0.42.1
+ms-python.black-formatter@2024.4.0
+ms-python.debugpy@2024.12.0
+ms-python.isort@2023.10.1
+ms-python.python@2024.16.0
+ms-python.vscode-pylance@2024.8.2
+redhat.vscode-yaml@1.15.0
+samueltscott.maximizeterminal@2.1.3

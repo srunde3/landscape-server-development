@@ -1,0 +1,400 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: Current File",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "bin/generate-api-schemas",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Python: Remote Attach Landscape (5678)",
+      "type": "debugpy",
+      "request": "attach",
+      "connect": {
+        "host": "localhost",
+        "port": 5678
+      },
+      "pathMappings": [
+        {
+          "localRoot": "${workspaceFolder}",
+          "remoteRoot": "."
+        }
+      ],
+      "justMyCode": false
+    },
+    {
+      "name": "Python: Remote Attach API (5679)",
+      "type": "debugpy",
+      "request": "attach",
+      "connect": {
+        "host": "localhost",
+        "port": 5679
+      },
+      "pathMappings": [
+        {
+          "localRoot": "${workspaceFolder}",
+          "remoteRoot": "."
+        }
+      ],
+      "justMyCode": false
+    },
+    {
+      "name": "Python: Remote Attach 5690",
+      "type": "debugpy",
+      "request": "attach",
+      "connect": {
+        "host": "localhost",
+        "port": 5690
+      },
+      "pathMappings": [
+        {
+          "localRoot": "${workspaceFolder}",
+          "remoteRoot": "."
+        }
+      ],
+      "justMyCode": false
+    },
+    {
+      "name": "Python: Account Url Model Tests",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "bin/trial",
+      "python": "/home/ubuntu/landscape-server-2/build/venv/bin/python",
+      "args": [
+        "canonical.landscape.model.main.tests.test_account.AccountUrlTest",
+      ],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Python: OIDC API Tests",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "bin/trial",
+      "python": "/home/ubuntu/landscape-server-2/build/venv/bin/python",
+      "args": [
+        "canonical.landscape.api.auth.tests.test_oidc",
+      ],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Python: OIDC Model Tests",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "bin/trial",
+      "python": "/home/ubuntu/landscape-server-2/build/venv/bin/python",
+      "args": [
+        "canonical.landscape.model.main.tests.test_oidc",
+      ],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Python: API Helpers Tests",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "bin/trial",
+      "python": "/home/ubuntu/landscape-server-2/build/venv/bin/python",
+      "args": [
+        "canonical.landscape.api.tests.test_helpers",
+      ],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Python: OIDC Auth API Tests",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "bin/trial",
+      "python": "/home/ubuntu/landscape-server-2/build/venv/bin/python",
+      "args": [
+        "canonical.landscape.api.auth.tests.test_auth_code",
+      ],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Python: Login Policy Tests",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "bin/trial",
+      "python": "/home/ubuntu/landscape-server-2/build/venv/bin/python",
+      "args": [
+        "canonical.landscape.model.account.tests.test_login_policy",
+      ],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Python: Login API Tests",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "bin/trial",
+      "python": "/home/ubuntu/landscape-server-2/build/venv/bin/python",
+      "args": [
+        "canonical.landscape.api.auth.tests.test_login",
+      ],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Python: API Resource Tests",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "bin/trial",
+      "python": "/home/ubuntu/landscape-server-2/build/venv/bin/python",
+      "args": [
+        "canonical.landscape.api.tests.test_resource",
+      ],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Python: Ubuntu One Login Tests",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "bin/trial",
+      "python": "/home/ubuntu/landscape-server-2/build/venv/bin/python",
+      "args": [
+        "canonical.landscape.api.auth.tests.test_ubuntu_one",
+      ],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Python: Account API: SwitchAccountHandler Tests",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "bin/trial",
+      "python": "/home/ubuntu/landscape-server-2/build/venv/bin/python",
+      "args": [
+        "canonical.landscape.api.tests.test_account.SwitchAccountHandlerTest",
+      ],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Python: Account Model Tests",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "bin/trial",
+      "python": "/home/ubuntu/landscape-server-2/build/venv/bin/python",
+      "args": [
+        "canonical.landscape.model.main.tests.test_account",
+      ],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Python: Invitation API Tests",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "bin/trial",
+      "python": "/home/ubuntu/landscape-server-2/build/venv/bin/python",
+      "args": [
+        "canonical.landscape.api.tests.test_invitation",
+      ],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Python: Ubuntu Pro free trial Tests",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "bin/trial",
+      "python": "/home/ubuntu/landscape-server-2/build/venv/bin/python",
+      "args": [
+        "canonical.landscape.ui.administrator.tests.test_administrator.UbuntuProFreeTrialTest",
+      ],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Python: Api JWT Auth Tests",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "bin/trial",
+      "python": "/home/ubuntu/landscape-server-2/build/venv/bin/python",
+      "args": [
+        "canonical.landscape.api.auth.tests.test_jwt",
+      ],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Python: Accounts Navigation Tests",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "bin/trial",
+      "python": "/home/ubuntu/landscape-server-2/build/venv/bin/python",
+      "args": [
+        "canonical.landscape.ui.menu.tests.test_accounts",
+      ],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Python: Account superadmin API tests",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "bin/trial",
+      "python": "/home/ubuntu/landscape-server-2/build/venv/bin/python",
+      "args": [
+        "canonical.landscape.api.tests.test_account.SuperadminAccountPatchTest",
+      ],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Python: Security tests",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "bin/trial",
+      "python": "/home/ubuntu/landscape-server-2/build/venv/bin/python",
+      "args": [
+        "canonical.landscape.security.tests.test_authentication",
+      ],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Python: Administrator Tests",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "bin/trial",
+      "python": "/home/ubuntu/landscape-server-2/build/venv/bin/python",
+      "args": [
+        "canonical.landscape.ui.administrator.tests.test_administrator",
+      ],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Python: Password Authentication Configuration Tests",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "bin/trial",
+      "python": "/home/ubuntu/landscape-server-2/build/venv/bin/python",
+      "args": [
+        "canonical.landscape.model.tests.test_configuration.IsPasswordAuthenticationAvailableTest",
+      ],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Python: Resource Tests",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "bin/trial",
+      "python": "/home/ubuntu/landscape-server-2/build/venv/bin/python",
+      "args": [
+        "canonical.landscape.api.tests.test_resource",
+      ],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Python: Resource UI Tests",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "bin/trial",
+      "python": "/home/ubuntu/landscape-server-2/build/venv/bin/python",
+      "args": [
+        "canonical.landscape.ui.tests.test_resource",
+      ],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Python: Config Lib Tests",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "bin/trial",
+      "python": "/home/ubuntu/landscape-server-2/build/venv/bin/python",
+      "args": [
+        "canonical.lib.tests.test_config",
+      ],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Python: Subdomain Middleware Tests",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "bin/trial",
+      "python": "/home/ubuntu/landscape-server-2/build/venv/bin/python",
+      "args": [
+        "canonical.landscape.subdomain.tests.test_middleware",
+      ],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Python: Run Application Tests",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "bin/trial",
+      "python": "/home/ubuntu/landscape-server-2/build/venv/bin/python",
+      "args": [
+        "canonical.landscape.tests.test_application",
+      ],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Python: Verify Schema Tests",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "bin/trial",
+      "python": "/home/ubuntu/landscape-server-2/build/venv/bin/python",
+      "args": [
+        "canonical.landscape.schema.tests.test_verify.CheckPendingPatchesTest",
+      ],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Python: PackageMarketTest",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "bin/trial",
+      "python": "/home/ubuntu/landscape-server-2/build/venv/bin/python",
+      "args": [
+        "canonical.landscape.model.package.tests.test_market.PackageMarketTest",
+      ],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Python: Secrets Tests",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "bin/trial",
+      "python": "/home/ubuntu/landscape-server-2/build/venv/bin/python",
+      "args": [
+        "canonical.landscape.api.tests.test_secrets",
+      ],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Python: Test OIDC Group Import Jobs",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "bin/trial",
+      "python": "/home/ubuntu/landscape-server-2/build/venv/bin/python",
+      "args": [
+        "canonical/landscape/model/oidc_group_import/tests/test_jobs.py",
+      ],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+  ]
+}
