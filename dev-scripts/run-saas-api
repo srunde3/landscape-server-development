@@ -1,0 +1,2 @@
+#! /bin/sh
+LANDSCAPE_CONFIG_FILE="configs/default/service.conf" LANDSCAPE_ROOT_URL="https://landscape-server-jammy.com/" ./api --nodaemon

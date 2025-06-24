@@ -1,0 +1,6 @@
+#! bin/sh
+
+LANDSCAPE_CONFIG_FILE="configs/standalone_dev/service.conf" \
+LANDSCAPE_CONFIG="standalone_dev" \
+LANDSCAPE_CONFIG_DIR="configs/standalone_dev" \
+LANDSCAPE_ROOT_URL="https://landscape-server-jammy.com/" dev/racecar

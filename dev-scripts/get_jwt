@@ -1,0 +1,1 @@
+export JWT=$(http POST localhost:9091/login email=john@example.com password=pwd | jq -r ".token")

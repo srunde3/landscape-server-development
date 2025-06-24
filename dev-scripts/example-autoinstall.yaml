@@ -1,0 +1,49 @@
+#cloud-config
+autoinstall:
+  version: 1
+  identity:
+    hostname: ubuntu-server
+    password: "$6$exDY1mhS4KUYCE/2$zmn9ToZwTKLhCw.b4/b.ZRTIZM30JZ4QrOQ2aOXJ8yk96xpcCof0kxKwuX1kqLG/ygbJ1f8wxED22bTL4F46P0"
+    username: ubuntu
+  packages:
+    - landscape-client
+  user-data:
+    write_files:
+      - path: /etc/landscape/client.conf
+        owner: landscape:landscape
+        permissions: '0600'
+        content: |
+          [client]
+          log_level = info
+          data_path = /var/lib/landscape/client
+          include_manager_plugins = ScriptExecution
+      - path: /etc/landscape/landscape_server_ca.crt
+        owner: landscape:landscape
+        permissions: '0600'
+        content: |
+          -----BEGIN CERTIFICATE-----
+          MIIDSDCCAjCgAwIBAgIUBOznxnwbI3VbItY3JD1dmTLIPa8wDQYJKoZIhvcNAQEL
+          BQAwJzElMCMGA1UEAwwcKi5sYW5kc2NhcGUtc2VydmVyLWphbW15LmNvbTAeFw0y
+          NTA2MTYxOTQ2NTlaFw0zNTA2MTQxOTQ2NTlaMCcxJTAjBgNVBAMMHCoubGFuZHNj
+          YXBlLXNlcnZlci1qYW1teS5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK
+          AoIBAQC+TE/eeVh7Yp28r0hmkwvLuw2DNekdxMa6x8/qwbKAjkqXx9q1yu8aeQWc
+          6jsA/69YDAV3gwfGBOAKndn1wCzT0s/uSSeJfcyRo2mQ2xyqm5DpqWyXowFda7VE
+          pCcGJWXfLUjhmoBlO4iShug26M31ow5ADySwRW3qS0LGD9lxkOrD03+8DOPr0GvV
+          WwUUUJxIN9ABMPyC9snO3yzhsqDHirSgLNJ3EozbTKIZT0nIP41v10t5rB3lefm8
+          dFWDjSciSkEWEa6O/MIf8NNSNxfKJWfpXdXLocbJW/gpW5P6fxeO/ufVMnAKRcuQ
+          Z6U5QpVUnZmGW2s9SxtVqhf31UFfAgMBAAGjbDBqMEkGA1UdEQRCMECCGmxhbmRz
+          Y2FwZS1zZXJ2ZXItamFtbXkuY29tghwqLmxhbmRzY2FwZS1zZXJ2ZXItamFtbXku
+          Y29thwQKwj18MB0GA1UdDgQWBBRW2XlRo15NmEX0mkN+8w+wVAKW6zANBgkqhkiG
+          9w0BAQsFAAOCAQEAfjEFwShUMXCTzHzxj2Ezh0DNnXJK+IUsV9oYG5tmaHm5NOuC
+          xpiyAMx5vz6kDbPxxMK5eROs37FYI+X2QapRU6fravmBFK5dxjcAuSr9JCQb+cJb
+          M8KvkIIkmSzPbf7FeVXUlBnIgIrGwpF2WwnXNr4yuJ+alKqWp9hRGqf8ugGFjCoG
+          JOzJzZffEtJZWHsxgcywismEndQg0mX2DVqiIFpM682BfGepjRxtDt7khSxizbzw
+          nRrpa3jwtePUNY3cA5RQ6fP+tFosTlN0ewRdL+OHPAtwMRdy9NE/8usfFCJAHI8t
+          zjYNae8cOIm7VK0kUEO2zFBHyyiioIzKIbnmsw==
+          -----END CERTIFICATE-----
+    runcmd:
+      - landscape-config -c /etc/landscape/client.conf --silent
+
+
+# This is a file that uses the cloud-config convention to provide autoinstall information
+# to the installer. See https://canonical-subiquity.readthedocs-hosted.com/en/latest/tutorial/providing-autoinstall.html#providing-autoinstall

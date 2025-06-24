@@ -1,0 +1,7 @@
+{
+    "issuer": "https://dev-27343468.okta.com/",
+    "provider": "okta",
+    "client_id": "0oaip4jc35CMOseOd5d7",
+    "client_secret": "zC3856gfP2eHpZ-XvbhpC68sfXhmCs0gUXFQejmLYiT6qlY3yR6s3hLOhLUOBeUr",
+    "name": "okta-dev"
+}
